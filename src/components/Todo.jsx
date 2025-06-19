@@ -1,13 +1,15 @@
 import { useState } from "react";
+import Form from "./Form";
+import TodoList from "./TodoList";
 
 export default function Todo() {
-    const [todo,setTodo]=useState("")
-    return (
-        <div>
-            <form>
-                <input onChange={(e)=>setTodo(e.target.value)} type="text" value={todo} />
-                <button type="submit">Add</button>
-            </form>
+  const [todos,setTodos]=useState([])
+
+     return (
+     
+        <div>   
+          <Form todos={todos} setTodos={setTodos} />  
+          <TodoList todos={todos} />
         </div>
     );
 }
