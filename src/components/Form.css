@@ -1,38 +1,45 @@
-.todoform{
+.todoform {
     background-color: aquamarine;
-    border-radius: 8px ;
+    border-radius: 8px;
     padding: 20px;
-    width: 500px;
-    margin: 0 auto;
-    margin-top: 50px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.modernInput{
     width: 100%;
+    max-width: 500px;
+    margin: 50px auto 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  .inputContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .modernInput {
+    flex: 1;
     border: none;
-    display: block;
     color: black;
     font-size: 16px;
     border-radius: 5px;
     background-color: whitesmoke;
-}
-
-.modernInput:focus{
+    padding: 10px;
+    min-width: 200px;
+    box-sizing: border-box;
+  }
+  
+  .modernInput:focus {
     outline: none;
-}
-
-.modernButton{
-    display: inline-block;
-    border-color: whitesmoke;
+  }
+  
+  .modernButton {
+    border: none;
     border-radius: 6px;
     background-color: aquamarine;
-    padding: 8px 18px;
+    padding: 10px 20px;
     color: black;
     cursor: pointer;
-    margin-left: 10px;
-}
-
-.inputContainer{
-    display: flex;
-}
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+  

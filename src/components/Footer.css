@@ -1,0 +1,25 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: aquamarine;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 10;
+  }
+  
+  @media (max-width: 600px) {
+    .footer {
+      font-size: 1rem;
+      padding: 8px;
+    }
+  }
+  
+  .footer-item {
+    margin: 20px;
+  }
+  

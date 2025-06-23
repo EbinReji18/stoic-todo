@@ -1,9 +1,19 @@
-.header{
+.header {
     background-color: aquamarine;
     text-align: center;
     font-weight: bolder;
-    height: 50px;
+    min-height: 50px;
     padding: 10px;
     font-size: 2em;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2) ;
-}
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  @media (max-width: 600px) {
+    .header {
+      font-size: 1.5em;
+      padding: 8px;
+    }
+  }
+  
